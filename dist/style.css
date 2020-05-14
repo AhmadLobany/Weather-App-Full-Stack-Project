@@ -1,0 +1,51 @@
+body {
+    background-image: url('backpic.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 200px;
+  }
+
+input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 90%;
+    height: 40px;
+}
+
+button {
+  background: transparent;
+}
+
+::placeholder { 
+  color: black;
+  opacity: 1;
+}
+
+
+.city {
+  justify-items: start;
+  align-items: center;
+  font-size: x-large;
+  display: grid;
+  font-family: 'Poppins', sans-serif;
+  grid-template-columns: repeat(3,1fr);
+}
+
+
+
+.sign {
+  border-radius: 10%;
+  display: block;
+  border-color: blue;
+}
+
+.fa-plus-circle {
+  color: darkgreen;
+}
+
+.fa-minus-circle {
+  color: darkred;
+}
+
