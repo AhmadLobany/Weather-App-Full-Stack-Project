@@ -47,6 +47,17 @@ button {
   color: darkgreen;
 }
 
+
+.fa-plus-circle:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.fa-minus-circle:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 .fa-minus-circle {
   color: darkred;
 }
