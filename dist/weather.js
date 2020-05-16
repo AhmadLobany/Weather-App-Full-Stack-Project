@@ -8,7 +8,7 @@ class WeatherApp {
         this.cityData = []
         const data = await $.get('/cities')
         for (let city of data) {
-            await this.getCityData(city.name)
+             this.getCityData(city.name)
         }
         //this.cityData = data
     }
