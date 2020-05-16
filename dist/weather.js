@@ -7,7 +7,7 @@ class WeatherApp {
     async getDataFromDB() {
         this.cityData = []
         const data = await $.get('/cities')
-        for (city of data) {
+        for (let city of data) {
             await this.getCityData(city.name)
         }
         //this.cityData = data
