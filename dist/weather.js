@@ -21,8 +21,8 @@ class WeatherApp {
             cityEle = this.cityData.find(u => u.name.toLowerCase() == cityName.toLowerCase())
         } 
         if (cityEle == undefined) {
-            let city = await $.get(`/city/${cityName}`)
-            this.cityData.push(city)
+            let city = await $.get(`/city/${cityName}`) 
+           if(city.name) this.cityData.push(city)
         }
     }
 
