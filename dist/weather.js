@@ -16,7 +16,9 @@ class WeatherApp {
 
     async getCityData(cityName) {
         //check if already exist 
+        if(this.cityData.length>0) {
         const cityEle = this.cityData.find(u => u.name.toLowerCase() == cityName.toLowerCase())
+        }
         if (cityEle == undefined) {
             let city = await $.get(`/city/${cityName}`)
             this.cityData.push(city)
