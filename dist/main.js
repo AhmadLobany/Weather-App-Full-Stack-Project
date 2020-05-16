@@ -2,6 +2,9 @@ const App = new WeatherApp()
 const renderer = new Renderer()
 const render = renderer.renderData
 
+
+
+
 const loadPage = function() {
     App.getDataFromDB().then( ()=>render(App.cityData))
 }
@@ -29,7 +32,7 @@ $('#cities-container').on('click','.fa-minus-circle',function() {
 })
 
 
-input.addEventListener("keyup", function(event) {
+$('input').addEventListener("keyup", function(event) {
     // Number 13 is the "Enter" key on the keyboard
     if (event.keyCode === 13) {
       // Cancel the default action, if needed
