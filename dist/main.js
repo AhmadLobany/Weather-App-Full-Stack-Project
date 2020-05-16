@@ -32,7 +32,7 @@ $('#cities-container').on('click','.fa-minus-circle',function() {
 })
 
 
-$('input').addEventListener("keyup", function(event) {
+document.getElementById('input').addEventListener("keyup", function(event) {
     // Number 13 is the "Enter" key on the keyboard
     if (event.keyCode === 13) {
       // Cancel the default action, if needed
